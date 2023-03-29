@@ -1,3 +1,7 @@
 const appDataSource = require("./dataSource");
+const houseDao = require("./houseDao");
 
-module.exports = { appDataSource };
+module.exports = {
+    appDataSource,
+    houseDao,
+ };
