@@ -1,7 +1,9 @@
 const appDataSource = require("./dataSource");
+const userDao = require("./userDao");
 const postDao = require("./postDao");
 
 module.exports = {
-    appDataSource,
-    postDao,
- };
+  appDataSource,
+  userDao,
+  postDao,
+};
