@@ -1,7 +1,7 @@
 const appDataSource = require("./dataSource");
-const houseDao = require("./houseDao");
+const postDao = require("./postDao");
 
 module.exports = {
     appDataSource,
-    houseDao,
+    postDao,
  };

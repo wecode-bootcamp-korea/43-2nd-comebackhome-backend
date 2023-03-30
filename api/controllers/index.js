@@ -1,5 +1,5 @@
-const houseController = require("./houseController");
+const postController = require("./postController");
 
 module.exports = {
-    houseController,
+    postController,
 }

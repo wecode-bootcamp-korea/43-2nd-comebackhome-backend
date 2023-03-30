@@ -1,4 +1,4 @@
-const { houseService } = require("../services");
+const { postService } = require("../services");
 const { catchAsync } = require("../utils/error");
 
 const getHouseById = catchAsync(async (req, res) => {
@@ -11,7 +11,7 @@ const getHouseById = catchAsync(async (req, res) => {
             throw error;
     }
 
-    const data = await houseService.getHouseById(postsId);
+    const data = await postService.getHouseById(postsId);
 
     return res.status(200).json({ data });
 })
