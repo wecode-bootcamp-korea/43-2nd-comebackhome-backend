@@ -9,6 +9,7 @@ const getProductById = async (productId) => {
             products.name,
             products.color,
             products.discount_rate,
+            products.stock,
             round(products.price) as price,
             round(products.price * (1 - (discount_rate / 100))) as discountPrice
         from products
