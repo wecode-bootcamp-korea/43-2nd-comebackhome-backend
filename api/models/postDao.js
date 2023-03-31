@@ -17,8 +17,8 @@ const getHouseById = async (postsId) => {
                     "productUrl", products.image_url,
                     "productName", products.name,
                     "productPrice", products.price,
-                    "pixelRow", image_coordinates.pixel_row,
-                    "pixelColumn", image_coordinates.pixel_column
+                    "left", image_coordinates.pixel_row,
+                    "top", image_coordinates.pixel_column
                 )
             ) as productInfo
         from posts
