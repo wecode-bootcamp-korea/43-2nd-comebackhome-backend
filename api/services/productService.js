@@ -2,7 +2,7 @@ const { productDao } = require("../models");
 
 const getProductList = async (offset, limit) => {
   const DEFAULT_OFFSET = 0;
-  const DEFAULT_LIMIT = 6;
+  const DEFAULT_LIMIT = 8;
 
   const offsetSetting = offset ? offset : DEFAULT_OFFSET;
   const limitSetting = limit ? limit : DEFAULT_LIMIT;
