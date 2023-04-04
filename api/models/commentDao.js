@@ -51,7 +51,7 @@ const createComment = async (userId, postId, contents) => {
     [contents, userId, postId]
   );
 
-  const [result] = await appDataSource.query(
+  const result = await appDataSource.query(
     `SELECT 
   c.post_id AS postId,
   c.id AS commentId,
