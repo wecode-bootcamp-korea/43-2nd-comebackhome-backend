@@ -1,4 +1,4 @@
-const appDataSource = require("./dataSource");
+const appDataSource = require("../dataSource");
 const { productQueryBuilder } = require("./productQueryBuilder");
 
 const getProductData = async (limit, offset) => {
@@ -6,16 +6,18 @@ const getProductData = async (limit, offset) => {
 
   const productData = await appDataSource.query(
     `SELECT
-  p.id,
-  p.image_url AS imageUrl,
-  p.name,
-  p.discount_rate,
-  ROUND(p.price * (1 - (p.discount_rate / 100))) AS discountPrice
-  FROM products AS p
-  ${filterQuery}
-  `
+        p.id,
+        (SELECT COUNT(products.id) AS count FROM products) AS totalNumber,
+        p.image_url AS imageUrl,
+        p.name,
+        p.discount_rate,
+        ROUND(p.price * (1 - (p.discount_rate / 100))) AS discountPrice
+        FROM products AS p
+        ${filterQuery}
+      `
   );
-  return productData;
+
+  return { productData };
 };
 
 const getProductById = async (productId) => {

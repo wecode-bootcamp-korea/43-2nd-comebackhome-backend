@@ -6,12 +6,12 @@ const deleteCart = catchAsync(async (req, res) => {
   const userId = req.user.id;
   const cartId = data["cartId"];
 
-  await cartService.deleteCart(cartId, userId);
+  const cartDeleteResult = await cartService.deleteCart(cartId, userId);
 
   if (!cartId) {
     return res.status(200).json({ message: "SUCCESS_ALL_DELETE_CARTS" });
   }
-  return res.status(200).json({ message: "SUCCESS_DELETE_CARTS" });
+  return res.status(200).json({ cartDeleteResult });
 });
 
 const getCart = catchAsync(async (req, res) => {

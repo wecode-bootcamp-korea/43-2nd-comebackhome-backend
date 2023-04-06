@@ -4,7 +4,9 @@ const deleteCart = async (cartId, userId) => {
   if (!cartId) {
     return cartDao.deleteAllCart(userId);
   }
-  return cartDao.deleteSelectedCart(cartId, userId);
+
+  const deleteCart = await cartDao.deleteSelectedCart(cartId, userId);
+  return deleteCart;
 };
 
 const getCart = async (userId) => {

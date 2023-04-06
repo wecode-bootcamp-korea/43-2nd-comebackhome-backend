@@ -33,6 +33,8 @@ const getUserCart = async (userId) => {
         products.color as productColor,
         products.stock as productStock,
         products.image_url as productImage,
+        ROUND(products.price) as price,
+        products.discount_rate as discountingRate,
         carts.quantity,
         round((products.price * (1 - (products.discount_rate / 100))) * carts.quantity) as productPrice,
         (SELECT
