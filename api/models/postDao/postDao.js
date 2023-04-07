@@ -34,24 +34,6 @@ const getPostData = async (limit, offset, sorting, roomSizeType) => {
   return postData;
 };
 
-//   `SELECT
-// p.id,
-// post_images.image_url AS imageUrl,
-// p.title,
-// u.social_nickname AS nickname,
-// u.social_profile_image AS profileImage,
-// r.name AS roomSizeName,
-// r.id AS roomId
-// FROM posts AS p
-// INNER JOIN post_images ON post_images.post_id=p.id
-// INNER JOIN users AS u ON u.id=p.user_id
-// INNER JOIN room_size_types AS r ON r.id=p.room_size_type_id
-// ${filterQuery}
-
-// `  );
-//   return postData;
-// };
-
 const getHouseByPostId = async (postsId) => {
   const [result] = await appDataSource.query(
     `

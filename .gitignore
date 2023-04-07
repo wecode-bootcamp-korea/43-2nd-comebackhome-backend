@@ -402,3 +402,4 @@ zsdoc/data
 # End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,vim,webstorm,macos,linux,windows,zsh,node,dotenv
 
 /db/schema.sql
+.env.test
