@@ -59,7 +59,7 @@
 | 메인 페이지              | <img src="https://user-images.githubusercontent.com/122195011/230554516-0d2a7eb7-3d0a-468c-b5a7-e620008bc710.gif" width="500" height="300" /> | - 프론트엔드 : 문은빈  <br> - 백엔드 :  임수정    |
 | 카카오 소셜로그인 페이지                 | <img src="https://velog.velcdn.com/images/trtw9889/post/5d5725d0-8c84-4e80-b460-4206aa6ab13f/image.gif" width="500" height="300"/> | - 프론트엔드 :  신정호,이기태,문은빈 <br> - 백엔드 : 임수정       |
 | 집들이리스트 페이지 <br> 필터 & 정렬                 | <img src="https://velog.velcdn.com/images/trtw9889/post/c817ed90-c998-4a60-9a09-14588a0fb35c/image.gif" width="500" height="300"/> | - 프론트엔드 : 문은빈 <br> - 백엔드 : 임수정   |
-|집들이 상세페이지   | <img src="https://velog.velcdn.com/images/trtw9889/post/6a8e8dcf-c627-4dd8-af46-8169bfed7de7/image.gif" width="500" height="300"/> | - 프론트엔드 : 신정호 <br> - 백엔드 : 류승준       |
+|집들이 상세페이지   | <img src="https://user-images.githubusercontent.com/122195011/230555816-f8b24137-2769-4a45-809e-3c29c7063aa1.gif" width="500" height="300"/> | - 프론트엔드 : 신정호 <br> - 백엔드 : 류승준       |
 | 댓글&대댓글 페이지  | <img src="https://velog.velcdn.com/images/trtw9889/post/cc9408d9-00a6-47bd-aead-ea8217d07890/image.gif" width="500" height="300"/>| - 프론트엔드 : 문은빈 <br> - 백엔드 : 임수정       |
 | 쇼핑리스트 페이지     | <img src="https://velog.velcdn.com/images/trtw9889/post/b2095007-93d9-42cc-8565-f438fde04191/image.gif" width="500" height="300"/>| - 프론트엔드 : 문은빈, 이기태, 신정호 <br> - 백엔드 : 임수정       |
 | 쇼핑상세페이지     | <img src="https://velog.velcdn.com/images/trtw9889/post/b4106fe8-bbd7-4e58-b485-8362c4a3cb56/image.gif" width="500" height="300"/>| - 프론트엔드 : 신정호 <br> - 백엔드 : 류승준      |
